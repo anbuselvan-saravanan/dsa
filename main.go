@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	problem := 902
+	problem := 209
 
 	switch problem {
 	case 992:
@@ -24,6 +24,7 @@ func main() {
 		fmt.Println("nums: ", target)
 		fmt.Println("k: ", k)
 		fmt.Println("Output: ", SubarraysWithKDistinct(target, k))
+
 	case 902:
 		_fruits := [][]int{
 			{1, 2, 1},
@@ -36,5 +37,27 @@ func main() {
 		fmt.Println("Input")
 		fmt.Println("fruits: ", fruit)
 		fmt.Println("Output: ", TotalFruit(fruit))
+
+	case 209:
+		_target := [][]int{
+			{2, 3, 1, 2, 4, 3},
+			{1, 4, 4},
+			{1, 1, 1, 1, 1, 1, 1, 1},
+		}
+
+		_k := []int{
+			7,
+			4,
+			11,
+		}
+
+		target := _target[0]
+		k := _k[0]
+		fmt.Println("209. Minimum Size Subarray Sum")
+		fmt.Println("Input")
+		fmt.Println("nums: ", target)
+		fmt.Println("k: ", k)
+		fmt.Println("Output: ", MinSubArrayLen(k, target))
+
 	}
 }
