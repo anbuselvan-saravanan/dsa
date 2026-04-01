@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	problem := 560
+	problem := 238
 
 	switch problem {
 	case 992:
@@ -79,5 +79,36 @@ func main() {
 		fmt.Println("nums: ", target)
 		fmt.Println("k: ", k)
 		fmt.Println("Output: ", SubarraySum(target, k))
+
+	case 1314:
+		_target := [][][]int{
+			{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}},
+			{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}},
+		}
+
+		_k := []int{
+			1,
+			2,
+		}
+
+		target := _target[0]
+		k := _k[0]
+		fmt.Println("1314. Matrix Block Sum")
+		fmt.Println("Input")
+		fmt.Println("nums: ", target)
+		fmt.Println("k: ", k)
+		fmt.Println("Output: ", MatrixBlockSum(target, k))
+
+	case 238:
+		_target := [][]int{
+			{1, 2, 3, 4},
+			{-1, 1, 0, -3, 3},
+		}
+
+		target := _target[0]
+		fmt.Println("238. Product of Array Except Self")
+		fmt.Println("Input")
+		fmt.Println("nums: ", target)
+		fmt.Println("Output: ", ProductExceptSelf(target))
 	}
 }
