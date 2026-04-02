@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	problem := 523
+	problem := 974
 
 	switch problem {
 	case 992:
@@ -131,5 +131,26 @@ func main() {
 		fmt.Println("nums: ", target)
 		fmt.Println("k: ", k)
 		fmt.Println("Output: ", CheckSubarraySum(target, k))
+
+	case 974:
+		_target := [][]int{
+			{4, 5, 0, -2, -3, 1},
+			{5},
+			{-1, 2, 9},
+		}
+
+		_k := []int{
+			5,
+			9,
+			2,
+		}
+
+		target := _target[0]
+		k := _k[0]
+		fmt.Println("974. Subarray Sums Divisible by K")
+		fmt.Println("Input")
+		fmt.Println("nums: ", target)
+		fmt.Println("k: ", k)
+		fmt.Println("Output: ", SubarraysDivByK(target, k))
 	}
 }
