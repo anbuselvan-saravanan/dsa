@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	problem := 238
+	problem := 523
 
 	switch problem {
 	case 992:
@@ -110,5 +110,26 @@ func main() {
 		fmt.Println("Input")
 		fmt.Println("nums: ", target)
 		fmt.Println("Output: ", ProductExceptSelf(target))
+
+	case 523:
+		_target := [][]int{
+			{23, 2, 4, 6, 7},
+			{23, 2, 6, 4, 7},
+			{5, 0, 0, 0},
+		}
+
+		_k := []int{
+			6,
+			6,
+			3,
+		}
+
+		target := _target[2]
+		k := _k[2]
+		fmt.Println("523. Continuous Subarray Sum")
+		fmt.Println("Input")
+		fmt.Println("nums: ", target)
+		fmt.Println("k: ", k)
+		fmt.Println("Output: ", CheckSubarraySum(target, k))
 	}
 }
