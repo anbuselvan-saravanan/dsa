@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	problem := 974
+	problem := 724
 
 	switch problem {
 	case 992:
@@ -152,5 +152,18 @@ func main() {
 		fmt.Println("nums: ", target)
 		fmt.Println("k: ", k)
 		fmt.Println("Output: ", SubarraysDivByK(target, k))
+
+	case 724:
+		_input := [][]int{
+			{1, 7, 3, 6, 5, 6},
+			{1, 2, 3},
+			{2, 1, -1},
+		}
+
+		input := _input[0]
+		fmt.Println("724. Find Pivot Index")
+		fmt.Println("Input")
+		fmt.Println("nums: ", input)
+		fmt.Println("Output: ", PivotIndex(input))
 	}
 }
