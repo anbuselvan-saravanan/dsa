@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	problem := 724
+	problem := 53
 
 	switch problem {
 	case 992:
@@ -165,5 +165,18 @@ func main() {
 		fmt.Println("Input")
 		fmt.Println("nums: ", input)
 		fmt.Println("Output: ", PivotIndex(input))
+
+	case 53:
+		_input := [][]int{
+			{-2, 1, -3, 4, -1, 2, 1, -5, 4},
+			{1},
+			{5, 4, -1, 7, 8},
+		}
+
+		input := _input[1]
+		fmt.Println("53. Maximum Subarray")
+		fmt.Println("Input")
+		fmt.Println("nums: ", input)
+		fmt.Println("Output: ", MaxSubArray(input))
 	}
 }
